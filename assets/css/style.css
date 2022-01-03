@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: white;
+    margin-top: 10%;
+}
+
+.container {
+    text-align: center;
+}
+
+.container h1 {
+    font-size: 3rem;
+}
+
+.container img {
+    margin: 1rem 0;
+    cursor: pointer;
+}
+
+.button .turnOnOff {
+    width: 100px;
+    height: 40px;
+    font-size: 1rem;
+    border: 2px solid yellow;
+    background-color: transparent;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bolder;
+    transition: .3s;
+}
+
+.button .turnOnOff:hover {
+    background-color: yellow;
+    color: black;
+    transform: scale(1.1);
+}
+
+.button .turnOnOff.active {
+    border: 2px solid blue;
+}
+
+.button .turnOnOff.active:hover {
+    background-color: blue;
+    transform: scale(1.1);
+}
